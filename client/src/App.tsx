@@ -17,6 +17,7 @@ function App() {
           </SignedIn>
         </div>
         <Routes>
+        <Route path="/auth" element={<Auth />} />
           <Route
             path="/"
             element={
@@ -25,7 +26,7 @@ function App() {
               </FinancialRecordsProvider>
             }
           />
-          <Route path="/auth" element={<Auth />} />
+          
         </Routes>
       </div>
     </Router>
